@@ -5,6 +5,8 @@ obj-m += uname.o
 obj-m += param.o
 obj-m += ps_command.o
 obj-m += stack.o
+# This one is depended on stack.o
+obj-m += stack_advance.o
 
 all:
 	make -C $(KDIR) M=$(PWD) modules
