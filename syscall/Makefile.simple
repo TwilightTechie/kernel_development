@@ -1,0 +1,31 @@
+#Makefile for applications
+
+all: lab_files lab_process
+lab_files: lab_open  lab_read lab_write lab_simplecp lab_ls 
+lab_process: lab_pid lab_fork lab_daemon lab_pipe
+
+lab_syscall:
+gcc -o lab_syscall lab_syscall.c
+lab_open:
+gcc -o lab_open lab_open.c
+lab_read:
+gcc -o lab_read lab_read.c
+lab_write:
+gcc -o lab_write lab_write.c
+lab_simplecp:
+gcc -o lab_simplecp lab_simplecp.c
+lab_ls:
+gcc -o lab_ls lab_ls.c
+
+lab_pid:
+gcc -o lab_pid lab_pid.c
+lab_fork:
+gcc -o lab_fork lab_fork.c
+lab_daemon:
+gcc -o lab_daemon lab_daemon.c
+lab_pipe:
+gcc -o lab_pipe lab_pipe.c
+
+clean:
+rm -f lab_open lab_read lab_write lab_syscall lab_simplecp lab_ls lab_pid lab_fork lab_daemon lab_pipe
+
