@@ -4,6 +4,7 @@ obj-m += hello.o
 obj-m += uname.o
 obj-m += param.o
 obj-m += ps_command.o
+obj-m += stack.o
 
 all:
 	make -C $(KDIR) M=$(PWD) modules
