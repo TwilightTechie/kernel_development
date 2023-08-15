@@ -1,0 +1,1 @@
+savedcmd_/home/anup/projects/kernel_development_practice/memory/alloc_page.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/anup/projects/kernel_development_practice/memory/alloc_page.ko /home/anup/projects/kernel_development_practice/memory/alloc_page.o /home/anup/projects/kernel_development_practice/memory/alloc_page.mod.o;  true

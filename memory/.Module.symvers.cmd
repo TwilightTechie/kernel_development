@@ -1,0 +1,1 @@
+savedcmd_/home/anup/projects/kernel_development_practice/memory/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/anup/projects/kernel_development_practice/memory/Module.symvers -T /home/anup/projects/kernel_development_practice/memory/modules.order -i Module.symvers -e 
